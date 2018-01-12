@@ -1,0 +1,122 @@
+/*  ******************** */
+/* LOGO */
+.logo {
+
+	&__header {
+		font-weight: 400;
+		font-size: 10rem;
+		color: white;
+		letter-spacing: 2rem;
+		margin-left: 3rem;
+
+		@media screen and (max-width: 700px) { 
+			margin-top: 4rem;
+			font-size: 6rem;
+		}
+	}
+}
+
+
+/*  ******************** */
+/* USER NAV */
+.user-nav {
+	align-self: stretch; // makes it go top to bottom for each item
+	height: 6rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 2.2rem;
+	letter-spacing: .7rem;
+
+	& > * {
+		padding: 0 2rem;
+		cursor: pointer;
+		height: 100%; // again, makes it top to bottom 
+		display: flex;
+		align-items: center; // fixes it so they arent all at the top 
+	}
+
+	& > *:hover {
+		background-color: #eec;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+
+	&__header {
+		margin-top: 4.5rem;
+		font-size: 3rem;
+		letter-spacing: 1rem;
+	}
+
+	&__desc {
+		font-size: 1.4rem;
+		letter-spacing: .5rem;
+		text-align: center;
+		width: 60%;
+	}
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	align-items: flex-start;
+
+	/*margin-bottom: 8rem;*/
+
+	&__header {
+		margin-left: 35%;
+		margin-bottom: .5rem;
+		font-size: 1.8rem;
+
+		display: flex;
+		justify-content: center;
+
+		@media screen and (max-width: 700px) { 
+			margin: 1rem auto;
+		}
+	}
+
+	&__title {
+		
+		&-desc {
+			margin-left: 1.1rem;
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+.drink {
+	&__header {
+		font-size: 1.7rem;
+		display: flex;
+		justify-content: center;
+	}
+	&__title {
+		font-size: 1.1rem;
+		font-weight: 300;
+		margin-left: 1.1rem;
+	}
+}
+
+.footer {
+	&__desc {
+		text-align: center;
+	}
+
+	margin-top: -4rem;
+	margin-bottom: 4rem;
+}
+
